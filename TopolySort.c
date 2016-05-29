@@ -21,10 +21,10 @@ int main()
     for(i=0; i<n; i++)
         if(Inedg[i]==0)
             s[++top]=i;
-
+    printf("No Incoming edges are:\n");
     for(i=0; i<=top; i++)
         printf("%d\t",s[i]);
-
+    printf("Topological sequence is:\n");
     int node;
     while (top != -1)
     {
